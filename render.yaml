@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: ai-coding-mentor-backend
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn app:app
+    envVars:
+      - key: OPENAI_API_KEY
+        value: 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
